@@ -1,0 +1,11 @@
+<ul id="task-list"></ul>
+<input type="text" id="task-input">
+<button onclick="addTask()">Add</button>
+<script>
+function addTask() {
+    let input = document.getElementById("task-input").value;
+    let li = document.createElement("li");
+    li.innerText = input;
+    document.getElementById("task-list").appendChild(li);
+}
+</script>
